@@ -1,10 +1,14 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import React, { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
+import Menu from './components/MenuComponent';
 import './App.css';
 
-function App() {
+// function App() {
+  class App extends Component {
+    render(){
   return (
-    <div className="App">
+    <div>
       <Navbar dark color="primary">
         <div className="container">
           <NavbarBrand href="/">
@@ -13,6 +17,7 @@ function App() {
           </NavbarBrand>
         </div>
       </Navbar>
+      <Menu/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -29,6 +34,7 @@ function App() {
       </header> */}
     </div>
   );
+  }
 }
 
 export default App;
